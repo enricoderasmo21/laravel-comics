@@ -1,1 +1,128 @@
 @import '~bootstrap/scss/bootstrap';
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li{
+    list-style-type: none;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .active{
+    color: #0288f9;
+  
+    border-bottom: 4px solid #0288f9;
+  }
+  
+  .container-centered{
+      margin-left: auto;
+      margin-right: auto;
+      
+      width: 70%;
+  }
+  
+  .blue-btn{
+    padding: 10px 20px;
+  
+    border-style: none;
+  
+    background-color: #0288f9;
+  
+    color: white;
+  
+    font-weight: bold;
+  
+    cursor: pointer;
+  }
+
+//   /Assets------------
+
+
+
+
+// Header----------------
+
+
+  #header{
+
+    #inner-top-wrapper{
+
+        background-color: #0282f9;
+
+        #inner-top{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+
+            height: 20px;
+    
+            color: white;
+            font-size: 0.6em;
+            font-weight: bold;
+        }
+    }
+
+
+    nav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    
+        height: 100px;
+    
+        #logo{
+            height: 70px;
+    
+            img{
+                height: 100%;
+            }
+        }
+        
+        #links-container{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 25px;
+
+            margin-bottom: 0;
+    
+            font-size: 0.8em;
+            font-weight: bold;
+    
+            .link{
+                padding: calc(100px / 2 - 0.7em - 2.8px) 0;
+                cursor: pointer;
+    
+                &:hover{
+                    color: #0288f9;
+                }
+            }
+        }
+
+        #search{
+            display: flex;
+            justify-content: flex-end;
+            gap: 4px;
+
+            width: 120px;
+
+            border-bottom: 3px solid #0282f9;
+
+            #text{
+                font-size: 0.8em;
+                font-weight: bold;
+                line-height: 10px;
+            }
+        }
+    }
+}
+
+// /Header---------------------
