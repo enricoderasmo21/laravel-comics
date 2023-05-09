@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div id="link-one-container">
+<div id="link-container">
     <div id="sep">
 
     </div>

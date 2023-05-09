@@ -1,19 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
 
-:root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-  
-    color-scheme: light;
-    
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  }
-
  *{
     margin: 0;
     padding: 0;
@@ -26,6 +12,8 @@
   
   a{
     text-decoration: none;
+
+    color: black;
   }
   
   .container-centered{
@@ -107,6 +95,7 @@
     
             .link{
                 padding: calc(100px / 2 - 0.7em - 2.8px) 0;
+
                 cursor: pointer;
     
                 &:hover{
@@ -194,7 +183,7 @@
     .card{
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 12px;
         
         margin-bottom: 30px;
     
@@ -264,8 +253,8 @@
 
 
 
-// Link-one------------------
-#link-one-container{
+// Links------------------
+#link-container{
 
     #sep{
         height: 60px;
@@ -283,7 +272,7 @@
 
         #thumb-container{
             position: absolute;
-            top: -250px;
+            top: -260px;
             left: 60px;
 
             width:160px;
