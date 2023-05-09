@@ -7,7 +7,7 @@
                 <div class="link-container">
                     @foreach($footerLinks as $link)
                     <div >
-                        <h3 class="title"> {{ $link['title'] }} </h3>
+                        <h3 class="title"> {{ strtoupper($link['title']) }} </h3>
                     
                         <ul class="link-list">
                             @foreach($link['links'] as $item)
