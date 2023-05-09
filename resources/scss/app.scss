@@ -1,5 +1,19 @@
 @import '~bootstrap/scss/bootstrap';
 
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light;
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
  *{
     margin: 0;
     padding: 0;
@@ -12,13 +26,6 @@
   
   a{
     text-decoration: none;
-    color: black;
-  }
-  
-  .active{
-    color: #0288f9;
-  
-    border-bottom: 4px solid #0288f9;
   }
   
   .container-centered{
@@ -27,7 +34,7 @@
       
       width: 70%;
   }
-  
+
   .blue-btn{
     padding: 10px 20px;
   
@@ -41,6 +48,7 @@
   
     cursor: pointer;
   }
+  
 
 //   /Assets------------
 
@@ -126,3 +134,266 @@
 }
 
 // /Header---------------------
+
+
+
+
+
+
+
+// Main---------------------
+
+#main{
+
+    #jumbo{
+        height: 300px;
+    
+        background-image: url(../img/jumbotron.jpg);
+        background-position: top;
+        background-size: cover;
+    }
+    
+    .main-container{
+        position: relative;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        min-height: 100px;
+    
+        background-color: #1c1c1c;
+    
+        #btn-absolute{
+            position: absolute;
+            top: -20px;
+    
+            font-size: 1.2em;
+        }
+    
+        #cards-container{
+            display: flex;
+            flex-flow: row wrap;
+            gap: 25px;
+    
+            padding: 40px 20px;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: center;
+    
+            margin-bottom: 30px;
+    
+            #btn-load{
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        
+        margin-bottom: 30px;
+    
+        width: calc(100% / 6 - 45px / 6 * 3);
+    
+        background-color: #1c1c1c;
+    
+        color: white;
+    
+        .title{
+            font-size: 0.7em;
+            font-weight: bold;
+        }
+    
+        img{
+            width: 100%;
+    
+            aspect-ratio: 1/1;
+    
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .shop-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        height: 140px;
+    
+        background-color: #0282f9;
+        .links-container{
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .link{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+    
+                .img-container{
+                    height: 50px;
+                    max-width: 50px;
+    
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .text{
+                    display: flex;
+                    align-items: center;
+    
+                    font-size: 0.8em;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+// /Main---------------------
+
+
+
+
+
+// Footer-------------------
+
+#footer{
+
+    .sec-one{
+        height: 300px;
+    
+        background-image: url(../img/footer-bg.jpg);
+    
+        .inner-sec-one{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            .link-container{
+                display: flex;
+                flex-flow: column wrap;
+                gap: 30px;
+    
+                padding-top: 20px;
+    
+                height: 300px;
+    
+                .link-list{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                }
+    
+                .title{
+                    margin-bottom: 10px;
+                    font-size: 0.9em;
+    
+                    color: white;
+                }
+    
+                .link{
+                    font-size: 0.6em;
+    
+                    cursor: pointer;
+    
+                    color: #959595;
+                }
+            }
+        
+            .img-container{
+                height: 300px;
+    
+                overflow: hidden;
+        
+                img{
+                    height: 150%;
+    
+                    transform: translate(0, -18%);
+                }
+            }
+        }
+    }
+
+    .sec-two{
+        display: flex;
+        align-items: center;
+    
+        height: 100px;
+    
+        background-color: #303030;
+    
+        .sec-two-inner{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            height: 100px;
+    
+            #sign-btn{
+                padding: 10px;
+    
+                background: none;
+    
+                border: 2px solid #0282f9;
+    
+                color: white;
+    
+                cursor: pointer;
+            }
+    
+            .inner-right{
+                display: flex;
+                flex-direction: row;
+    
+                .follow-us{
+                    padding-right: 30px;
+                    
+                    font-weight: bold;
+    
+                    color: #0282f9;
+                }
+    
+                .icons-container{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 16px;
+    
+    
+                    .img-container{
+        
+                        width: 32px;
+        
+                        img{
+                            width: 100%;
+    
+                            cursor: pointer;
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+    
+    }
+}
+
+
+
+
+
+// /Footer------------------

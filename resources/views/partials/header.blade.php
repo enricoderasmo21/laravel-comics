@@ -17,7 +17,7 @@
     
             <div>
                 <ul id="links-container">
-                    @foreach($data[0] as $link)
+                    @foreach($links as $link)
     
                     <li>
                         <a href="">{{ strtoupper($link) }}</a>
