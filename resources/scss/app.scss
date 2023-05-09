@@ -58,7 +58,7 @@
 // Header----------------
 
 
-  #header{
+#header{
 
     #inner-top-wrapper{
 
@@ -131,6 +131,14 @@
             }
         }
     }
+
+    #jumbo{
+        height: 300px;
+    
+        background-image: url(../img/jumbotron.jpg);
+        background-position: top;
+        background-size: cover;
+    }
 }
 
 // /Header---------------------
@@ -144,14 +152,6 @@
 // Main---------------------
 
 #main{
-
-    #jumbo{
-        height: 300px;
-    
-        background-image: url(../img/jumbotron.jpg);
-        background-position: top;
-        background-size: cover;
-    }
     
     .main-container{
         position: relative;
@@ -259,9 +259,125 @@
     }
 }
 
-
-
 // /Main---------------------
+
+
+
+
+// Link-one------------------
+#link-one-container{
+
+    #sep{
+        height: 60px;
+        background-color: #0282f9;
+    }
+
+    #main-sec{
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        padding: 50px 0;
+
+        #thumb-container{
+            position: absolute;
+            top: -250px;
+            left: 60px;
+
+            width:160px;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        #left-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            width: 60%;
+
+            #title{
+                font-size: 1.6em;
+                font-weight: bold;
+
+                color: #003f5e;
+            }
+            
+            .green-tab{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                height: 40px;
+                width: 600px;
+
+                font-size: 0.8em;
+                font-weight: bold;
+                color: white;
+
+                background-color: #55ba59;
+    
+                .first-tab-sec{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    padding: 0 20px;
+
+                    width: 70%;
+                    height: 100%;
+
+                    border-right: 2px solid black;
+
+                    .price{
+                        color: #b7fb98;
+                    }
+
+                    .available{
+                        color: #b7fb98;
+                    }
+                }
+
+                .second-tab-sec{
+                    width: 30%;
+
+                    text-align: center;
+                }
+
+            }
+            .paragraph{
+                font-size: 0.9em;
+            }
+        }
+
+        #right-container{
+
+            #ad{
+                margin-top: 20px;
+
+                font-size: 0.9em;
+                font-weight: bold;
+
+                text-align: right;
+            }
+
+            #ad-container{
+                width: 250px;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// /Link-one------------------
 
 
 

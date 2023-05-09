@@ -3,16 +3,13 @@
 @section('content')
 
 <div id="main">
-    <div id="jumbo">
-        
-    </div>
     <div class="main-container">
         <div class="container-centered">
             <button id="btn-absolute" class="blue-btn">CURRENT SERIES</button>
             <div id="cards-container">
                 @foreach($comics as $card)
                 
-                <a href="#" class="card">
+                <a href="{{route($card['title'])}}" class="card">
                     <img src="{{ $card['thumb'] }}" alt="">
                     <div class="title"> {{ strtoupper($card['title']) }} </div>
                 </a>
